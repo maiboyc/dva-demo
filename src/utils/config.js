@@ -10,7 +10,7 @@ const config = {
   iconFontJS: '/iconfont.js',
   YQL: ['http://www.zuimeitianqi.com'],
   CORS: [],
-  openPages: ['/login'],
+  openPages: ['/'],
   apiPrefix: '/api/v1',
   PAGE_SIZE: 3,
   api: {
