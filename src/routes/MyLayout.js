@@ -1,13 +1,27 @@
 import React from 'react';
-import { Header, Footer, Sider, Content, Layout } from 'antd';
 import { connect } from 'dva';
+import ProductList from '../components/ProductList';
+import MainLayout from '../components/MainLayout/MainLayout';
+import styles from './MyLayout.less';
 
-function MyLayout() {
+const MyLayout = ({ dispatch, products, location }) => {
+  function handleDelete(id) {
+    dispatch({
+      type: 'products/delete',
+      payload: id,
+    });
+  }
   return (
-    <div>
-      123456
-    </div>
+    <MainLayout location={location}>
+      <div className={styles.normal}>
+        <h2>商品列表</h2>
+        <ProductList onDelete={handleDelete} products={products} />
+      </div>
+    </MainLayout>
   );
-}
+};
 
-export default connect()(MyLayout);
+// export default Products;
+export default connect(({ products }) => ({
+  products,
+}))(MyLayout);

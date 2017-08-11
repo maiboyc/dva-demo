@@ -15,7 +15,7 @@ function RouterConfig({ history }) {
       <Route path="/products" component={Products} />
       <Route path="/users" component={Users} />
       <Route path="/pageNotFound" commponent={PageNotFound} />
-      <Route path="/layout" commponent={MyLayout} />
+      <Route path="/myLayout" commponent={MyLayout} />
     </Router>
   );
 }

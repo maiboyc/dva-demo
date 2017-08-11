@@ -18,8 +18,8 @@ function Header({ location }) {
       <Menu.Item key="/products">
         <Link to="/products"><Icon type="hdd" />产品</Link>
       </Menu.Item>
-      <Menu.Item key="/layout">
-        <Link to="/layout"><Icon type="hdd" />布局</Link>
+      <Menu.Item key="/myLayout">
+        <Link to="/myLayout"><Icon type="meh" />布局</Link>
       </Menu.Item>
       <Menu.Item key="/404">
         <Link to="/pageNotFound"><Icon type="frown-circle" />404</Link>
