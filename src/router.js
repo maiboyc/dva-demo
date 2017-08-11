@@ -14,8 +14,8 @@ function RouterConfig({ history }) {
       <Route path="/index" component={IndexPage} />
       <Route path="/products" component={Products} />
       <Route path="/users" component={Users} />
-      <Route path="/pageNotFound" commponent={PageNotFound} />
-      <Route path="/myLayout" commponent={MyLayout} />
+      <Route path="/pageNotFound" component={PageNotFound} />
+      <Route path="/myLayout" component={MyLayout} />
     </Router>
   );
 }
